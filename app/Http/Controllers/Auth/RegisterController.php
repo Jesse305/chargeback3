@@ -47,10 +47,13 @@ class RegisterController extends Controller
      */
     protected function validator(array $data)
     {
+        $obrigatorio = "Campo obrigatório";
         return Validator::make($data, [
-            'name' => 'required|string|max:255',
+            'name' => 'required|string|max:255|min:3',
             'email' => 'required|string|email|max:255|unique:users',
             'password' => 'required|string|min:6|confirmed',
+            'cpf' => 'required|min:14|unique:users',
+            'perfil' => 'required|integer'
         ]);
     }
 
@@ -62,10 +65,13 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
-        return User::create([
-            'name' => $data['name'],
-            'email' => $data['email'],
-            'password' => bcrypt($data['password']),
-        ]);
+      return User::create([
+          'name' => $data['name'],
+          'email' => $data['email'],
+          'password' => bcrypt($data['password']),
+          'cpf' => $data['cpf'],
+          'perfil' => $data['perfil'],
+          'status' => 1
+      ]);
     }
 }

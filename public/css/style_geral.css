@@ -1,0 +1,32 @@
+.alert-erro {
+  color: #DC143C;
+  font-style: italic;
+}
+
+.menu-lateral > ul {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.panel-menu-lateral{
+  margin-bottom: 5px;
+}
+
+.menu-lateral > ul > li {
+  list-style-type: none;
+}
+
+.menu-lateral > ul > li > a {
+  text-decoration: none;
+}
+.menu-lateral > ul > li > a:hover {
+  font-weight: 900;
+  color: #FFFFFF;
+}
+.btn-menu {
+  background-color: #ADD8E6;
+  color: #FFFFFF;
+  display: block;
+  margin-bottom: 3px;
+  font-weight: bold;
+}

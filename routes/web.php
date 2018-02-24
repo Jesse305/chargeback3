@@ -12,5 +12,13 @@
 */
 
 Route::get('/', function () {
-    return view('layouts.app');
-})->name('home');
+    return view('auth.login');
+});
+
+Route::get('/redefinir', function(){
+  return view('auth.passwords.email');
+})->name('redefinir_senha');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
