@@ -5,7 +5,7 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="panel panel-success">
+                <div class="panel panel-info">
                   <div class="panel-heading">
                     <h4>Redefinir Senha</h4>
                   </div>
