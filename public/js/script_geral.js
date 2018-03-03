@@ -1,7 +1,14 @@
 $(document).ready(function(){
 
+  $(".dtTable").DataTable({
+    "language": {
+      "url": "//cdn.datatables.net/plug-ins/1.10.16/i18n/Portuguese-Brasil.json"
+    }
+  });
+
   //mascaras gerais
   $("#cpf").mask("999.999.999-99");
+  $(".ip").mask("999.999.999.999");
 
   // pagina register
   var perfil_user = $("#perfil_user");

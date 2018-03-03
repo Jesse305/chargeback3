@@ -8,12 +8,15 @@
     <link rel="stylesheet" href="{{asset('css/bootstrap.min.css')}}">
     <link rel="stylesheet" href="{{asset('css/style_geral.css')}}">
     <link rel="stylesheet" href="{{asset('jquery-toast-plugin/dist/jquery.toast.min.css')}}">
+    <link rel="stylesheet" href="{{asset('datatables.net-dt/css/jquery.dataTables.min.css')}}">
     <!-- js -->
-    <script src="jquery/dist/jquery.min.js" charset="utf-8"></script>
+    <script src="{{asset('jquery/dist/jquery.min.js')}}" charset="utf-8"></script>
     <script src="{{asset('js/bootstrap.min.js')}}" charset="utf-8"></script>
     <script src="{{asset('js/jquery.mask.min.js')}}" charset="utf-8"></script>
     <script src="{{asset('js/script_geral.js')}}" charset="utf-8"></script>
     <script src="{{asset('jquery-toast-plugin/dist/jquery.toast.min.js')}}" charset="utf-8"></script>
+    <script src="{{asset('datatables.net/js/jquery.dataTables.min.js')}}" charset="utf-8"></script>
+    <script src="{{asset('sweetalert2/dist/sweetalert2.all.min.js')}}" charset="utf-8"></script>
   </head>
   <body>
 
@@ -68,8 +71,16 @@
             </div>
           </div>
           <ul>
-            <li> <a href="#" class="btn btn-sm btn-menu"> Lista de Sistemas </a> </li>
+            <li> <a href="{{route('sistemas')}}" class="btn btn-sm btn-menu"> Lista de Sistemas </a> </li>
             <li> <a href="#" class="btn btn-sm btn-menu"> Novo Sistema </a> </li>
+          </ul>
+
+          <div class="panel panel-info panel-menu-lateral">
+            <div class="panel-heading">Desenvolvedores</div>
+          </div>
+          <ul>
+            <li> <a href="{{route('desenvolvedores')}}" class="btn btn-sm btn-menu">Lista de Desenvolvedores</a> </li>
+          <li> <a href="{{route('desenvolvedor_cadastro')}}" class="btn btn-sm btn-menu">Novo Desenvolvedor</a> </li>
           </ul>
         </div>
 
@@ -92,7 +103,7 @@
 
     @if(session('alerta'))
       <script type="text/javascript">
-        toastMessage({{session('alerta')['msg']}}, {{session('alerta')['tipo']}});
+        toastAlert('{{session('alerta')['msg']}}', '{{session('alerta')['tipo']}}');
       </script>
     @endif
 
