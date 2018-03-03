@@ -32,3 +32,11 @@ Route::post('/desenvolvedor_cadastrar', 'DesenvolvedorController@cadastrar')->na
 Route::get('/desenvolvedor_excluir/{id}', 'DesenvolvedorController@excluir')->name('desenvolvedor_excluir');
 Route::get('/desenvolvedor_edicao/{id}', 'DesenvolvedorController@edicao')->name('desenvolvedor_edicao');
 Route::post('/desenvolvedor_editar/{id}', 'DesenvolvedorController@editar')->name('desenvolvedor_editar');
+
+//rotas banco de dados
+Route::get('/bancos_dados', 'BancoDadosController@bancos_dados')->name('bancos_dados');
+Route::get('/banco_dados_cadastro', 'BancoDadosController@cadastro')->name('banco_dados_cadastro');
+Route::post('/banco_dados_cadastrar', 'BancoDadosController@cadastrar')->name('banco_dados_cadastrar');
+Route::get('/banco_dados_excluir/{id}', 'BancoDadosController@excluir')->name('banco_dados_excluir');
+Route::get('/banco_dados_edicao/{banco_dados}', 'BancoDadosController@edicao')->name('banco_dados_edicao');
+Route::post('/banco_dados_edicao/{id}', 'BancoDadosController@editar')->name('banco_dados_editar');

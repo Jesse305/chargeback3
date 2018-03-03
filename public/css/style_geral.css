@@ -29,3 +29,19 @@
   margin-bottom: 3px;
   font-weight: bold;
 }
+
+.white {
+  background-color: white;
+}
+
+.info {
+  color: #4d4dff;
+}
+
+.warning {
+  color: #ffb366;
+}
+
+.danger {
+  color: #ff471a;
+}

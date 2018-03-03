@@ -114,13 +114,6 @@ class DesenvolvedorController extends Controller
           'tipo' => 'success',
           'msg' => 'Registro Excluído com sucesso'
         ]);
-      }else{
-        return redirect()
-        ->back()
-        ->with('alerta', [
-          'tipo' => 'warning',
-          'msg' => 'Ocorreu um erro!'
-        ]);
       }
     }
 }

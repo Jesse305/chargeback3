@@ -31,4 +31,15 @@
       <strong>{{$errors->first('ip')}}</strong>
     </span>
   @endif
+  @if(isset($desenv))
+  <div class="form-group" style="margin-top: 10px;">
+    <label for="status">Status:</label>
+    <label for="" class="radio-inline"> <input type="radio" name="status" value="1"
+      @if(old('status') == '1' || (isset($desenv) && $desenv->status == '1')) checked @endif> Ativo
+    </label>
+    <label for="" class="radio-inline"> <input type="radio" name="status" value="0"
+      @if(old('status') == '0' || (isset($desenv) && $desenv->status == '0')) checked @endif> Inativo 
+    </label>
+  </div>
+  @endif
 </div>

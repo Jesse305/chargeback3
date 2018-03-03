@@ -26,7 +26,7 @@
          <a class="navbar-brand" href="#">CHARGEBACK</a>
        </div>
        <ul class="nav navbar-nav">
-         <li class="active"><a href="{{route('home')}}"> <i class="glyphicon glyphicon-home"></i> </a></li>
+         <li class="active"><a href="{{route('sistemas')}}"> <i class="glyphicon glyphicon-home"></i> </a></li>
        </ul>
        <ul class="nav navbar-nav navbar-right">
          @guest
@@ -82,6 +82,15 @@
             <li> <a href="{{route('desenvolvedores')}}" class="btn btn-sm btn-menu">Lista de Desenvolvedores</a> </li>
           <li> <a href="{{route('desenvolvedor_cadastro')}}" class="btn btn-sm btn-menu">Novo Desenvolvedor</a> </li>
           </ul>
+
+          <div class="panel panel-info panel-menu-lateral">
+            <div class="panel-heading">Banco de Dados</div>
+          </div>
+          <ul>
+            <li> <a href="{{route('bancos_dados')}}" class="btn btn-sm btn-menu">Lista de Bancos de Dados</a> </li>
+            <li> <a href="{{route('banco_dados_cadastro')}}" class="btn btn-sm btn-menu">Novo Banco de Dados</a> </li>
+          </ul>
+
         </div>
 
         @endguest

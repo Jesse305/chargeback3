@@ -25,11 +25,11 @@
         <td>@if($dev->ip == null) Não Informado @else {{$dev->ip}} @endif </td>
         <td>@if($dev->status == 1) Ativo @else Inativo @endif</td>
         <td>
-          <a href="{{route('desenvolvedor_edicao', $dev->id)}}" class="btn btn-warning" title="Editar">
-            <i class="glyphicon glyphicon-edit"></i>
+          <a href="{{route('desenvolvedor_edicao', $dev->id)}}" class="btn white" title="Editar">
+            <i class="glyphicon glyphicon-edit warning"></i>
           </a>
-          <button type="button" class="btn btn-danger" title="Excluir" onclick="excluir('{{route('desenvolvedor_excluir', $dev->id)}}');">
-            <i class="glyphicon glyphicon-remove"></i>
+          <button type="button" class="btn white" title="Excluir" onclick="excluir('{{route('desenvolvedor_excluir', $dev->id)}}');">
+            <i class="glyphicon glyphicon-remove danger"></i>
           </button>
         </td>
       </tr>
@@ -40,20 +40,20 @@
 @endsection
 
 <script type="text/javascript">
-function excluir(_href){
-  swal({
-    title: 'Tem certeza?',
-    text: "Deseja realmente excluir o registro!",
-    type: 'warning',
-    showCancelButton: true,
-    confirmButtonColor: '#3085d6',
-    cancelButtonColor: '#d33',
-    confirmButtonText: 'Sim, excluir!',
-    cancelButtonText: 'Não, cancelar'
-  }).then((result) => {
-    if (result.value) {
-      window.location.href= _href;
-    }
-  });
-}
+  function excluir(_href){
+    swal({
+      title: 'Tem certeza?',
+      text: "Deseja realmente excluir o registro!",
+      type: 'warning',
+      showCancelButton: true,
+      confirmButtonColor: '#3085d6',
+      cancelButtonColor: '#d33',
+      confirmButtonText: 'Sim, excluir!',
+      cancelButtonText: 'Não, cancelar'
+    }).then((result) => {
+      if (result.value) {
+        window.location.href= _href;
+      }
+    });
+  }
 </script>

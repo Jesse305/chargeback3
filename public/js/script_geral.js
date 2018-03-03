@@ -6,6 +6,18 @@ $(document).ready(function(){
     }
   });
 
+  //revela senha
+  var revela_senha = $(".revela_senha");
+  revela_senha.click(function(){
+    var input_senha = $(this).data("input_senha");
+    var senha = document.getElementById(input_senha);
+    if(senha.type == "password"){
+      senha.type = "text";
+    }else{
+      senha.type = "password";
+    }
+  });
+
   //mascaras gerais
   $("#cpf").mask("999.999.999-99");
   $(".ip").mask("999.999.999.999");
@@ -24,6 +36,21 @@ $(document).ready(function(){
   });
 
   //fim register
+
+  //banco de dados
+  var btn_visualizar = $('.btn_visualizar');
+  var modal = $('#modal_info');
+
+  btn_visualizar.click(function(){
+    var _this = $(this);
+    var user = _this.data("user");
+    var password = _this.data("password");
+
+    $("#user").html(user);
+    $("#password").html(password);
+  });
+
+  //fim banco dados
 
 });
 
