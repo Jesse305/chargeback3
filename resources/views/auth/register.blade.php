@@ -24,7 +24,7 @@
                                 <input id="name" type="text" class="form-control" name="name" value="{{ old('name') }}" required autofocus max="255">
 
                                 @if ($errors->has('name'))
-                                    <span class="alert-erro">
+                                    <span class="alerta_erro">
                                         <strong>{{ $errors->first('name') }}</strong>
                                     </span>
                                 @endif
@@ -36,7 +36,7 @@
                           <div class="col-md-6">
                             <input type="text" class="form-control cpf" id="cpf" name="cpf" value="{{old('cpf')}}" required>
                             @if($errors->has('cpf'))
-                              <span class="alert-erro">
+                              <span class="alerta_erro">
                                 <strong>{{$errors->first('cpf')}}</strong>
                               </span>
                             @endif
@@ -50,7 +50,7 @@
                                 <input id="email" type="email" class="form-control" name="email" value="{{ old('email') }}" required maxlength="255">
 
                                 @if ($errors->has('email'))
-                                    <span class="alert-erro">
+                                    <span class="alerta_erro">
                                         <strong>{{ $errors->first('email') }}</strong>
                                     </span>
                                 @endif
@@ -64,7 +64,7 @@
                                 <input id="password" type="password" class="form-control" name="password" required>
 
                                 @if ($errors->has('password'))
-                                    <span class="alert-erro">
+                                    <span class="alerta_erro">
                                         <strong>{{ $errors->first('password') }}</strong>
                                     </span>
                                 @endif
@@ -88,7 +88,7 @@
                               <option value="2" @if(old('perfil') == 2) selected @endif >Usuário</option>
                             </select>
                             @if($errors->first('perfil_user'))
-                              <span class="alert-erro">
+                              <span class="alerta_erro">
                                 <strong>{{$erros->first('perfil_user')}}</strong>
                               </span>
                             @endif

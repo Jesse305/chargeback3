@@ -4,7 +4,7 @@
   <label for="nome" >*Nome:</label>
   <input class="form-control" type="text" name="nome" value="{{old('nome', isset($desenv) ? $desenv->nome : '')}}" id="nome" maxlength="200" required autofocus >
   @if($errors->has('nome'))
-    <span class="alert-erro">
+    <span class="alerta_erro">
       <strong>{{$errors->first('nome')}}</strong>
     </span>
   @endif
@@ -18,7 +18,7 @@
     <option value="MOBILE" @if(old('ling_programacao') == 'MOBILE' || (isset($desenv) && $desenv->ling_programacao == 'MOBILE'))selected @endif>MOBILE</option>
   </select>
   @if($errors->has('ling_programacao'))
-    <span class="alert-erro">
+    <span class="alerta_erro">
       <strong>{{$errors->first('ling_programacao')}}</strong>
     </span>
   @endif
@@ -27,7 +27,7 @@
   <label for="ip">IP da Máquina de Desenvolvimento:</label>
   <input class="form-control ip" type="text" name="ip" value="{{old('ip', isset($desenv) ? $desenv->ip : '')}}" id="ip">
   @if($errors->has('ip'))
-    <span class="alert-erro">
+    <span class="alerta_erro">
       <strong>{{$errors->first('ip')}}</strong>
     </span>
   @endif

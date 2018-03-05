@@ -2,7 +2,7 @@
 @section('title', 'Cadastro Desenvolvedor')
 
 @section('content')
-<div class="container-fluid">
+<div class="container-fluid" style="margin-bottom: 100px;">
   <div class="panel panel-info">
     <div class="panel-heading"> <h4>CADASTRO DE DESENVOLVEDOR</h4> </div>
   </div>

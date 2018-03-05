@@ -24,7 +24,7 @@
                                 <input id="cpf" type="text" class="form-control cpf" name="cpf" value="{{ old('cpf') }}" required autofocus>
 
                                 @if ($errors->has('cpf'))
-                                    <span class="alert-erro">
+                                    <span class="alerta_erro">
                                         <strong>{{ $errors->first('cpf') }}</strong>
                                     </span>
                                 @endif
@@ -38,7 +38,7 @@
                                 <input id="password" type="password" class="form-control" name="password" required>
 
                                 @if ($errors->has('password'))
-                                    <span class="alert-erro">
+                                    <span class="alerta_erro">
                                         <strong>{{ $errors->first('password') }}</strong>
                                     </span>
                                 @endif

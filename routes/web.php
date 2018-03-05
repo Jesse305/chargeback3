@@ -40,3 +40,12 @@ Route::post('/banco_dados_cadastrar', 'BancoDadosController@cadastrar')->name('b
 Route::get('/banco_dados_excluir/{id}', 'BancoDadosController@excluir')->name('banco_dados_excluir');
 Route::get('/banco_dados_edicao/{banco_dados}', 'BancoDadosController@edicao')->name('banco_dados_edicao');
 Route::post('/banco_dados_edicao/{id}', 'BancoDadosController@editar')->name('banco_dados_editar');
+
+//rotas ambientes
+Route::get('/ambientes', 'AmbienteController@ambientes')->name('ambientes');
+Route::get('/ambiente_cadastro', 'AmbienteController@cadastro')->name('ambiente_cadastro');
+Route::post('/ambiente_cadastrar', 'AmbienteController@cadastrar')->name('ambiente_cadastrar');
+Route::get('/ambiente_excluir/{id}', 'AmbienteController@excluir')->name('ambiente_excluir');
+Route::get('/ambiente_edicao/{ambiente}', 'AmbienteController@edicao')->name('ambiente_edicao');
+Route::post('/ambiente_editar/{ambiente}', 'AmbienteController@editar')->name('ambiente_editar');
+Route::get('/ambiente_detalhes/{ambiente}', 'AmbienteController@detalhes')->name('ambiente_detalhes');

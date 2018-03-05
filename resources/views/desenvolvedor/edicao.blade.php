@@ -3,7 +3,7 @@
 @section('title', 'Edição de Desenvolvedor')
 
 @section('content')
-<div class="container-fluid">
+<div class="container-fluid" style="margin-bottom: 100px;">
   <div class="panel panel-info">
     <div class="panel-heading">
       <h4>EDIÇÃO DE CADASTRO DE DESENVOLVEDOR</h4>

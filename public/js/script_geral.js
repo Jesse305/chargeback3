@@ -60,7 +60,7 @@ function toastAlert(texto, tipo){
       text: texto,
       position: 'top-right',
       icon: tipo,
-      bgColor: '#424242',
+      bgColor: '#0088cc',
       loader: false,
       stack: false
   });

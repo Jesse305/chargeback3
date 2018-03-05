@@ -71,7 +71,7 @@
             </div>
           </div>
           <ul>
-            <li> <a href="{{route('sistemas')}}" class="btn btn-sm btn-menu"> Lista de Sistemas </a> </li>
+            <li> <a href="{{route('sistemas')}}" class="btn btn-sm btn-menu"> Sistemas </a> </li>
             <li> <a href="#" class="btn btn-sm btn-menu"> Novo Sistema </a> </li>
           </ul>
 
@@ -79,7 +79,7 @@
             <div class="panel-heading">Desenvolvedores</div>
           </div>
           <ul>
-            <li> <a href="{{route('desenvolvedores')}}" class="btn btn-sm btn-menu">Lista de Desenvolvedores</a> </li>
+            <li> <a href="{{route('desenvolvedores')}}" class="btn btn-sm btn-menu">Desenvolvedores</a> </li>
           <li> <a href="{{route('desenvolvedor_cadastro')}}" class="btn btn-sm btn-menu">Novo Desenvolvedor</a> </li>
           </ul>
 
@@ -87,8 +87,16 @@
             <div class="panel-heading">Banco de Dados</div>
           </div>
           <ul>
-            <li> <a href="{{route('bancos_dados')}}" class="btn btn-sm btn-menu">Lista de Bancos de Dados</a> </li>
+            <li> <a href="{{route('bancos_dados')}}" class="btn btn-sm btn-menu">Bancos de Dados</a> </li>
             <li> <a href="{{route('banco_dados_cadastro')}}" class="btn btn-sm btn-menu">Novo Banco de Dados</a> </li>
+          </ul>
+
+          <div class="panel panel-info panel-menu-lateral">
+            <div class="panel-heading">Ambientes de Sistema</div>
+          </div>
+          <ul>
+            <li> <a href="{{route('ambientes')}}" class="btn btn-sm btn-menu"> Ambientes</a> </li>
+            <li> <a href="{{route('ambiente_cadastro')}}" class="btn btn-sm btn-menu">Novo Ambiente</a> </li>
           </ul>
 
         </div>

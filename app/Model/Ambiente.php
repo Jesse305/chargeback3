@@ -4,36 +4,11 @@ namespace App\Model;
 
 use Illuminate\Database\Eloquent\Model;
 
-class BancoDados extends Model
+class Ambiente extends Model
 {
     protected $fillable = [
-      'tipo', 'ambiente', 'ip_host', 'data_base', 'user', 'password', 'status'
+      'tipo_ambiente', 'sistema', 'host_ambiente', 'caminho', 'url', 'descricao', 'status'
     ];
-
-    public function printTipo($tipo)
-    {
-      switch ($tipo) {
-        case 1:
-        return 'MySQL';
-        break;
-
-        case 2:
-        return 'SQL Server';
-        break;
-
-        case 3:
-        return 'Oracle';
-        break;
-
-        case 4:
-        return 'PostgreSQL';
-        break;
-
-        case 5:
-        return 'MongoDB';
-        break;
-      }
-    }
 
     public function printStatus($status)
     {

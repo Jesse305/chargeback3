@@ -28,7 +28,7 @@
                                 <input id="email" type="email" class="form-control" name="email" value="{{ old('email') }}" required>
 
                                 @if ($errors->has('email'))
-                                    <span class="alert-erro">
+                                    <span class="alerta_erro">
                                         <strong>{{ $errors->first('email') }}</strong>
                                     </span>
                                 @endif
